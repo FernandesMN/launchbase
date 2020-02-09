@@ -1,0 +1,31 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Matheus",
+      "avatar_url": "https://google.com",
+      "gender": "M",
+      "services": "Calistenia, Musculação",
+      "birth": 1601596800000,
+      "created_at": 1581085051770
+    },
+    {
+      "id": 2,
+      "name": "Matheus",
+      "avatar_url": "https://google.com",
+      "gender": "M",
+      "services": "Calistenia, Musculação",
+      "birth": 1580515200000,
+      "created_at": 1581095665434
+    },
+    {
+      "id": 3,
+      "name": "Matheus Fernandes",
+      "avatar_url": "https://google.com",
+      "gender": "M",
+      "services": "Calistenia",
+      "birth": 1577923200000,
+      "created_at": 1581254379756
+    }
+  ]
+}
