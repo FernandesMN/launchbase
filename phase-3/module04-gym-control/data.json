@@ -2,39 +2,21 @@
   "instructors": [
     {
       "id": 1,
-      "name": "Julia Roberta",
-      "avatar_url": "https://rocketseat.com.br/",
+      "name": "Julia Roberta Ferreira",
+      "avatar_url": "https://images.unsplash.com/photo-1553531580-a000ac8df244?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=282&q=80",
       "gender": "F",
       "services": "Crossfit",
       "birth": 286675200000,
       "created_at": 1581342422895
     },
     {
-      "id": 2,
-      "name": "Matheus Fernandes",
-      "avatar_url": "https://thenx.com/",
-      "gender": "M",
-      "services": "Calistenia, Musculação",
-      "birth": 956188800000,
-      "created_at": 1581343976957
-    },
-    {
       "id": 3,
       "name": "Morgan",
-      "avatar_url": "https://thenx.com/",
+      "avatar_url": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
       "gender": "F",
       "services": "Street Workout",
       "birth": 975715200000,
       "created_at": 1581344093000
-    },
-    {
-      "id": "4",
-      "name": "Taylor",
-      "avatar_url": "https://thenx.com/",
-      "gender": "M",
-      "services": "Calistenia, Musculação",
-      "birth": 949363200000,
-      "created_at": 1581344301363
     }
   ]
 }
