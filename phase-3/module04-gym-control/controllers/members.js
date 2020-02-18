@@ -1,6 +1,6 @@
 const fs = require('fs');
 const data = require('../data.json')
-const { age, date } = require('../utils');
+const { date } = require('../utils');
 
 //index
 exports.index = function(req,res) {
@@ -22,20 +22,18 @@ exports.post = function(req,res) {
         }
     }
 
-    let { avatar_url, birth, gender, services, name } = req.body;
+    birth = Date.parse(req.body.birth);
+    let id = 1;
+    const lastMember = data.members[data.members.length - 1];
 
-    birth = Date.parse(birth);
-    const created_at = Date.now();
-    const id = Number(data.members.length + 1);
+    if (lastMember) {
+        id = lastMember.id + 1;
+    }
 
     data.members.push({
         id,
-        name,
-        avatar_url,
-        gender,
-        services,
-        birth,
-        created_at
+        ...req.body,
+        birth
     });
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
@@ -57,7 +55,7 @@ exports.show = function(req,res) {
 
     const member = {
         ...foundMember,
-        age: age(foundMember.birth),
+        birth: date(foundMember.birth).birthDay,
     };;
 
     return res.render("members/show",{member});

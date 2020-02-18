@@ -1,6 +1,17 @@
 {
-  "members": [],
-  
+  "members": [
+    {
+      "avatar_url": "https://thenx.com/",
+      "name": "Henrique Carlos",
+      "email": "mattdasdaento2ds17@gmail.com",
+      "birth": 921196800000,
+      "gender": "M",
+      "blood": "B+",
+      "wheight": "70",
+      "height": "170",
+      "id": 1
+    }
+  ],
   "instructors": [
     {
       "id": 1,
