@@ -145,7 +145,7 @@ header {
 
 /*=== FORM ===*/
 
-input {
+input, select {
     width: 100%;
     outline: none;
     color: #555;
@@ -172,6 +172,7 @@ a.button {
     margin-top: 32px;
     width: 100%;
     font-size: 16px;
+    cursor: pointer;
 }
 
 a.button {
@@ -181,7 +182,7 @@ a.button {
     text-decoration: none;
 }
 
-.form-delete button[type="submit"]{
+#form-delete button[type="submit"]{
     margin-top: 8px;
     background-color: lightcoral;
     cursor: pointer;

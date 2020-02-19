@@ -77,27 +77,27 @@
     <div>
         <select name="blood">
             <option value="A+"
-                {% if member.blood == 'A1' %}selected{% endif %}
+                {% if member.blood == 'A+' %}selected{% endif %}
             >A+</option>
 
             <option value="A-"
-                {% if member.blood == 'A0' %}selected{% endif %}
+                {% if member.blood == 'A-' %}selected{% endif %}
             >A-</option>
             
             <option value="B+"
-                {% if member.blood == 'B1' %}selected{% endif %}
+                {% if member.blood == 'B+' %}selected{% endif %}
             >B+</option>
             
             <option value="B-"
-                {% if member.blood == 'B0' %}selected{% endif %}
+                {% if member.blood == 'B-' %}selected{% endif %}
             >B-</option>
             
             <option value="AB+"
-                {% if member.blood == 'AB1' %}selected{% endif %}
+                {% if member.blood == 'AB+' %}selected{% endif %}
             >AB+</option>
             
             <option value="AB-"
-                {% if member.blood == 'AB0' %}selected{% endif %}
+                {% if member.blood == 'AB-' %}selected{% endif %}
             >AB-</option>
             
             <option value="O+"
