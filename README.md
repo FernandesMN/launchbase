@@ -11,5 +11,5 @@ OS X & Linux:
 
 ```sh
 - npm install
-- npm init
+- npm start
 ```

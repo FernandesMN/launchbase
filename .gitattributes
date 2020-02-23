@@ -1,4 +1,7 @@
+module02-frontend/* linguist-vendored
+launchbase/module02-frontend/* linguist-vendored
 views/* linguist-vendored
 launchbase/phase-2/module03-backend/views/* linguist-vendored
+views/* linguist-vendored
 launchbase/phase-3/module04-gym-control/views/* linguist-vendored
 *.js linguist-detectable=true
