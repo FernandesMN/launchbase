@@ -1,0 +1,6 @@
+phase-2/* linguist-vendored
+launchbase/phase-2/* linguist-vendored
+
+views/* linguist-vendored
+launchbase/phase-3/module04-gym-control/views/* linguist-vendored
+*.js linguist-detectable=true
