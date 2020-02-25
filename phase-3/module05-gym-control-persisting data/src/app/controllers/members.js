@@ -29,7 +29,7 @@ module.exports = {
         return
     },
 
-    put = function(req,res) {
+    put(req,res) {
         const keys = Object.keys(req.body);
     
         for(key of keys) {
