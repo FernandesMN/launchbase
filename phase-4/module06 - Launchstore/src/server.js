@@ -17,6 +17,4 @@ nunjucks.configure("src/app/views", {
     autoescape: false,
 });
 
-server.listen(5000, function() {
-    console.log('server is running...')
-});
+server.listen(5000);
