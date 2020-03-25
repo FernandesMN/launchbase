@@ -195,3 +195,21 @@ iframe {
     position: absolute;
     top: 0;
 }
+
+/* FOOTER */
+.all {
+    position: relative;
+}
+
+.content-position {
+    padding-bottom: 150px;
+}
+
+footer {
+    padding: 16px 16px;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

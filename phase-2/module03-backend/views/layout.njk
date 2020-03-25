@@ -10,13 +10,22 @@
     </head>
 
     <body>
-        <header>
-            <div class="links">
-                <a href="/">Sobre</a>
-                <a href="/portfolio">Aulas</a>
-            </div>
-        </header>
+        <div class="all">
+            <header>
+                <div class="links">
+                    <a href="/">Sobre</a>
+                    <a href="/portfolio">Aulas</a>
+                </div>
+            </header>
 
-        {% block content %} {% endblock %}
+            <div class="content-position">
+                {% block content %} {% endblock %}
+            </div>
+
+            <footer>
+                Residencial Acalanto - R. Guilherme Gemballa, 260 - Sala 3 - Jardim América, Rio do Sul - SC, 89160-188)<br>
+                Rocketseat © 2020 - Todos os direitos reservados
+            </footer>
+        </div>
     </body>
 </html>
