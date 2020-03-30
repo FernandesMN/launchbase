@@ -18,3 +18,8 @@ nunjucks.configure("src/app/views", {
 });
 
 server.listen(5000);
+
+// package.json
+// "start": "npm-run-all -p nodemon browsersync",
+// "nodemon": "nodemon src/server.js",
+// "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,src/app/views'"
