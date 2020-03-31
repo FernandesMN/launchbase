@@ -2,7 +2,7 @@ const Category = require("../models/Category");
 const Product = require("../models/Product");
 const File = require('../models/File');
 
-const { formatPrice } = require("../../lib/utils");
+const { formatPrice, date } = require("../../lib/utils");
 
 module.exports = {
     create(req, res) {
@@ -40,7 +40,26 @@ module.exports = {
         );
         await Promise.all(filesPromise);
 
-        return res.redirect(`/products/${productId}`);
+        return res.redirect(`/products/${productId}/edit`);
+    },
+
+    async show(req, res) {
+        let result = await Product.find(req.params.id);
+        const product = result.rows[0];
+
+        if (!product) return res.send('Product not found.');
+
+        const { minutes, hour, day, month } = date(product.updated_at);
+
+        product.published = {
+            day: `${day}/${month}`,
+            hour: `${hour}:${minutes}h`,
+        }
+
+        product.old_price = formatPrice(product.old_price);
+        product.price = formatPrice(product.price);
+
+        return res.render("products/show.njk", { product });
     },
 
     async edit(req, res) {
@@ -104,7 +123,7 @@ module.exports = {
 
         await Product.update(req.body);
 
-        return res.redirect(`/products/${req.body.id}/edit`);
+        return res.redirect(`/products/${req.body.id}`);
     },
 
     async delete(req, res) {
