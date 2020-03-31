@@ -1,5 +1,6 @@
 const express = require('express');
 const routes = express.Router();
+const multer = require('./app/middleswares/multer');
 const ProductController = require("../src/app/controllers/ProductController");
 
 routes.get("/", function(req,res) {
@@ -13,8 +14,8 @@ routes.get("/ads/create", function(req,res) {
 routes.get("/products/create", ProductController.create);
 routes.get("/products/:id/edit", ProductController.edit);
 
-routes.post("/products/", ProductController.post);
-routes.put("/products/", ProductController.put);
+routes.post("/products/", multer.array("photos", 6),ProductController.post);
+routes.put("/products/", multer.array("photos", 6),ProductController.put);
 routes.delete("/products/", ProductController.delete);
 
 module.exports = routes;
